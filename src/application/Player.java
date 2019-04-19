@@ -6,7 +6,6 @@ public class Player {
 	//Field Variables
 	private String _name;
 	private ArrayList <Card> _playerDeck = new ArrayList <Card>();
-	private ArrayList <Card> _winnings = new ArrayList <Card>();
 
 	//Constructor
 	public Player(String name){
@@ -16,10 +15,6 @@ public class Player {
 	//Getters
 	public ArrayList <Card> getDeck(){
 		return _playerDeck;
-	}
-
-	public ArrayList <Card> getWinnings(){
-		return _winnings;
 	}
 
 	//Other Methods

@@ -3,10 +3,7 @@ package application;
 public class Card {
 
 	//Suit values
-	static final String HEARTS = "Hearts";
-	static final String SPADES = "Spades";
-	static final String CLOVERS = "Clovers";
-	static final String DIAMONDS = "Diamonds";
+	public enum Suit{HEARTS, DIAMONDS, SPADES, CLOVERS};
 
 	//Field Variables
 	private int _value;

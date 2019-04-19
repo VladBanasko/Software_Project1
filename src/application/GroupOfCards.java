@@ -10,12 +10,12 @@ public class GroupOfCards {
 	//Constructors
 	public GroupOfCards(){
 		//Intialize cards
-		for(int i = 14; i >= 2; i--){
-			deck.add(new Card(Card.HEARTS, i));
-			deck.add(new Card(Card.SPADES, i));
-			deck.add(new Card(Card.CLOVERS, i));
-			deck.add(new Card(Card.DIAMONDS, i));
+		for(Card.Suit s: Card.Suit.values()){
+			for(int i = 14; i >= 2; i--){
+				deck.add(new Card(s.toString(), i));
+			}
 		}
+
 	}
 
 	//Other Methods
